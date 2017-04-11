@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!--  Html Style Guide for Java Jam -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+  
+  <link href="Components.css" rel="stylesheet" type="text/css">
+  <link href="Java Jam BEM.css" rel="stylesheet" type="text/css">
+  <link href="grid system.css" rel="stylesheet" type="text/css">
+  <link href="typography.css" rel="stylesheet" type="text/css">
+  <link href="code snippets.css" rel="stylesheet" type="text/css">
+  <title>Java Jam Style Guide</title>
+</head>
+
+<body>
+
+<header style="font-size:50px"><center>Java Jam</center></header>
+
+<!-- TABLE OF CONTENTS -->
+<!-- ___________________________________ -->
+
+<div><h1 class="title">Table of Contents</h1>
+<ol>
+<li><a href="#colors">Color</a>
+	<ol>
+		<li>Primary Color</li>
+		<li>Secondary Color</li>
+	</ol>
+	</li>
+<li><a href="#typo">Typography</a>
+	<ol>
+		<li>Primary Typeface</li>
+		<li>Secondary Typeface</li>
+	</ol></li>
+<li><a href="#module">Modules</a>
+	<ol>
+		<li>Block</li>
+		<li>Element</li>
+		<li>Modifier</li>
+	</ol></li>
+<li><a href="#image">Images</a>
+	<ol>
+		<li>Size Requirement</li>
+		<li>Image Treatment</li>
+		<li>Image Creation</li>
+	</ol></li>
+<li><a href="#navigation">Navigation</a></li>
+<li><a href="#foot">Footer</a></li>
+<li><a href="#org">Code Organization</a></li>
+<li><a href="#naming">File Naming</a></li>
+</ol>
+</div>
+<hr style="clear:both;">
+
+<!-- Section 1 - Colors-->
+<!-- ______________________________________________________________  -->
+
+<div class="colors"><h1 id="colors" class="title">Colors</h1>
+<p>The Primary Color Palette has a HEX value of #A4E5A3 and RGB value of 164 229 163.<br>
+The Secondary Palette uses the shade color rule.  THe HEX values:76A576, 496548, A4E5A, ADF2AC, 92CB91. <br>
+The Secondary Palette uses RGB values:118 165 118, 73 101 72, 164 229 163, 173 242 172, 146 203 145. <br>
+<img src="../../../Dropbox/mood.png" alt="Mood Board" style="float:left;width:300px;height:100px;"><br><br>
+</p>
+</div>
+<hr style="clear:both;">
+
+<!-- Section 2 - Typography -->
+<!-- ______________________________________________________________  -->
+
+<div class="type"><h1 id="typo" class="title">Typography</h1>
+
+<p class="typeBitter">
+Primary Serif used is Bitter. <br>
+To utilize font import   <textarea><link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet"> </textarea><br>
+To set font in css use <textarea>font-family: font-family: 'Bitter', serif;</textarea> <br>
+ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>
+abcdefghijklmnopqrstuvwxyz <br>
+0123456789.<br>
+</p>
+
+<p class="typeNoto">
+Primary San-serif used is Noto Sans	<br>
+To utilize font import <textarea><link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet"></textarea> <br>
+To set font in css use <textarea> font-family: 'Noto Sans', sans-serif; </textarea><br>
+ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>
+abcdefghijklmnopqrstuvwxyz <br>
+0123456789. <br>
+
+<ol>Special Typographic classes
+	<li><u> <font color="green">Underlined green</font></u></li>
+	<textarea>Set css to <font color="green">Underlined green</font> text-decoration: underline;</textarea>
+	<li class="shadow">Shadow text</li>
+	<textarea>Set css to text-shadow: 2px 2px #ff0000; </textarea>
+	<li class="skew">Sheared text</li>
+	<textarea>Set css to  transform: skewX(20deg); </textarea>
+	<li class="bold">Bold Text</li>
+	<textarea>Set css to font-weight: bold; </textarea>
+	<li class="italic">Italic Text</li>
+	<textarea>Set css to font-style: italic; </textarea>
+</ol>
+
+</p>
+
+</div>
+<hr style="clear:both;">
+
+
+<!-- Section 3 - Modules -->
+<!-- ______________________________________________________________  -->
+
+<div class="module"><h1 id="module" class="title">Modules</h1>
+The Block Element Modifier for the the style guide will consist of <br>
+<p>
+	 color--primary this is the modifier for color element <br>
+.style_color--secondary this is the modifier for color element<br>
+.style_font--sans_serif-- this is the primary typeface<br>
+.style_font--serif--this is secondary typeface<br>
+.style_font--shadow--this is modifier for special typography<br>
+.style_font-- bold text--this is modifier for special typograpy <br>
+.style_image--thumbnail is 64x64<br>
+.style_image_spacing<br>
+.style_image_rounding<br>
+.style_image_padding<br>
+</p>
+</textarea>
+
+</div>
+<hr style="clear:both;">
+
+<!-- Section 4 - Images -->
+<!-- ______________________________________________________________  -->
+
+<div class="images"><h1 id="image" class="title">Image Gallery for Java Jam</h1>
+<ol>
+	<li>Size Requirements for Java Jam 
+	<ul>
+		<li>Maximum size does not exceed Height 300 pixels by Width 300 pixels.  </li>
+		<li>Minimum Size is no less than Height 64 pixels by Width 64 pixels.</li>
+		<li>Thumbnail size is 64x64 pixels.</li>
+		<li>Example of thumbnail size of 64x64 and actual image.<li>
+		<li>64x64<img src="../../../Dropbox/tree_thumb.png" alt="Tree">
+		Actual Size<img src="../../../Dropbox/tree.png" alt="Tree">
+	</ul></li>
+	<li>Image Treatment
+	<ul>
+		<li>Borders uses </li>
+		<textarea>Set css to  border-bottom: thick dotted #ff0000; </textarea>
+		<li>Shadows</li>
+		<textarea>Set css to box-shadow: 10px 10px 5px #888888; </textarea>
+		<li>Rounding</li>
+		<textarea>Set css to border-radius: 25px; </textarea>
+		<li>Spacing</li>
+		<textarea>Set css to padding: 20px </textarea>
+		<li>Size Requirement - no more than 1 megabyte.</li>
+	</ul></li>
+	<li>Image Creation
+	<ul>
+		<li>Adobe Illustrator</li>
+		<li>Black and White</li>
+		<li>Duotone</li>
+		<li>Color Enhancements</li>
+		<li>Fliters</li>
+	</ul></li>
+</ol>
+</div>
+<hr style="clear:both;">
+
+<!-- Section 5 - Navigation -->
+<!-- ______________________________________________________________  -->
+
+<div class="navigation"><h1 id="navigation" class="title">Navigation</h1>
+<p> For the Navigation bar, it will consist of home, menu, events, order online,  and join our team link.  The navigation bar will utilize a list to display all of the links. </p>
+Example of Navigation Bar <br>
+ <ul class="nav">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#menu">menu</a></li>
+  <li><a href="#index">events</a></li>
+  <li><a href="#order online">order online</a></li>
+  <li><a href="#events">join our team</a></li>
+  </ul>
+
+In or the css code enter <textarea>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}</textarea>
+
+
+In the html code enter 
+<textarea>
+  <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#menu">menu</a></li>
+  <li><a href="#events">events</a></li>
+  <li><a href="#order online ">order online</a></li>
+  <li><a href="#join our team">join our team</a></li>
+  </ul>
+</textarea>
+</div>
+<hr style="clear:both;">
+
+<!-- Section 6 - Footer -->
+<!-- ______________________________________________________________  -->
+
+<div class="foot"><h1 id="foot" class="title">Footer</h1>
+<p>The footer will consist of a trademark sentence saying @Pacific Trails Style Guide 2016 </p>
+Example of footer code will be 
+<textarea> <footer>  @Pacific Trails Style Guide 2016 </footer> </textarea>
+</div>
+<hr style="clear:both;">
+
+<!-- Section 7 - Code Organization -->
+<!-- ______________________________________________________________  -->
+
+<div class="org"><h1 id="org" class="title">Code Organization</h1>
+<ol><h3>For code organization, the following rules should apply.</h3>
+<li>A line will separate each major section.  </li>
+<li>A ine will separate each minor section.</li>
+<li>Indentation will be tabs or the equivalent of 3 spaces</li>
+<li>Code blocks should have the opening bracket with the name of the declaration and the ending bracket alone on a single line.</li>	
+<li>Classes will be organized into its relevant categories.
+</ol>
+</div>
+<hr style="clear:both;">
+
+<div class="naming"><h1 id="naming" class="title">File Naming Conventions</h1>
+<p>Naming files should follow the following rules 
+<ol>
+	<li>Files with multiple words shall start with a lowercase for the first word and subsequent words will be capitalized on the first letter.</li>
+	<li>File extensions with alternatives should be chosen with the more commonly used ones such as html over htm, jpg over jpeg.</li>
+	</ol>
+</p>
+</div>
+<hr style="clear:both;">
+
+
+
+</body>
+</html>
