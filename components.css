@@ -1,5 +1,9 @@
-@import url("grid system.css");
-@import url("../../../../Documents/Unnamed Site 2/pacificStyle.css");
+/* Global One offs */
+.top-spacing {
+  margin-top: 3rem;
+}
+/* End of Global One offs */
+
 
 
 /* Header area */
@@ -112,3 +116,4 @@ header .brand img {
 .menu-favorites .description {
   text-align: center;
 }
+
